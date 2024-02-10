@@ -57,7 +57,7 @@ html{
     background-color: hsl(189, 41%, 97%);
     background-position: left;
     background-repeat: no-repeat;
-    background-size:10px 10px;
+    background-size:10px 13px;
     font-weight: 700;
 }
 .tipButtons{
@@ -116,7 +116,7 @@ html{
     background-color: hsl(189, 41%, 97%);
     background-position: left;
     background-repeat: no-repeat;
-    background-size:10px 10px;
+    background-size:13px 15px;
 
 }
 #totalPeople::placeholder,#bill::placeholder{
