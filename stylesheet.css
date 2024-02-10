@@ -53,12 +53,15 @@ html{
     max-width: 30rem;
     height: 25px;
     text-align: end;
-    background: url("images/icon-dollar.svg");
+    background: url("/images/icon-dollar.svg");
     background-color: hsl(189, 41%, 97%);
     background-position: left;
     background-repeat: no-repeat;
-    background-size:10px 13px;
+    background-size:10px 10px;
     font-weight: 700;
+}
+#bill:focus,#totalPeople:focus{
+    outline: 0;
 }
 .tipButtons{
     display: grid;
@@ -112,11 +115,11 @@ html{
     max-width: 30rem;
     height: 25px;
     text-align: end;
-    background: url("images/icon-person.svg");
+    background: url("/images/icon-person.svg");
     background-color: hsl(189, 41%, 97%);
     background-position: left;
     background-repeat: no-repeat;
-    background-size:13px 15px;
+    background-size:10px 10px;
 
 }
 #totalPeople::placeholder,#bill::placeholder{
