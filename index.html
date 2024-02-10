@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+  <link rel="stylesheet" href="stylesheet.css">
+  <title>Tip calculator app</title>
+
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="logoHolder">
+      <img src="/images/logo.svg" alt="Logo" id="logoImage">
+    </div>
+
+    <div class="wrapper">
+
+      <div class="calculateAmount">
+
+        <div class="bill">
+            <label for="bill" id="billLabel">
+                <p>Bill</p>
+            </label>
+            <div class="input">
+                
+                <input type="number" name="bill" id="bill" placeholder="0.0">
+            </div>
+        </div>
+
+        <div class="tip">
+            <span id="tipLabel">Select Tip %</span>
+            <div class="tipButtons">
+                <button class="tipButton">5%</button>
+                <button class="tipButton">10%</button>
+                <button class="tipButton">15%</button>
+                <button class="tipButton">20%</button>
+                <button class="tipButton">50%</button>
+                <input type="number" name="custom" id="customTip" placeholder="Custom" oninput="handleCustomTip(this.value)" class="tipButton">
+            </div>
+        </div>
+
+        <div class="people">
+
+          <label for="amount" display="block" id="peopleText">Number of people</label><br>
+          <input type="number" name="totalPeople" id="totalPeople" oninput="handlePeople(this.value)" placeholder="People can't be Zero">
+
+
+        </div>
+
+      </div>
+
+      <div class="showAmount">
+        <div class="amount">
+          <div>
+            <p>Tip Amount</p>
+            <p id="person">/ person</p>
+          </div>
+          <div id="amountDigit">$0.00</div>
+
+        </div>
+        <div class="amount">
+          <div>
+            <p>Total</p>
+            <p id="person">/ person</p>
+          </div>
+          <div id="perPeople">$0.00</div>
+
+        </div>
+        <button id="reset">RESET</button>
+      </div>
+
+    </div>
+
+  </div>
+</body>
+<script src="Script.js"></script>
+</html>
